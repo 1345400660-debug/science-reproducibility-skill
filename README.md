@@ -86,6 +86,7 @@ npx skills@1.7.2 add 1345400660-debug/science-reproducibility-skill --skill pape
 - [从旧 B/C 迁移](docs/迁移.md)
 - [常见问题](docs/常见问题与升级.md)
 - [维护与生成产物](docs/维护.md)
+- [版本发布检查清单](docs/发布检查清单.md)
 - [十分钟贡献指南](CONTRIBUTING.md)
 - [验证记录](docs/文档验收记录.md)
 - [版本记录](CHANGELOG.md)
