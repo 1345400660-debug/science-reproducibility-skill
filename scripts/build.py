@@ -39,7 +39,7 @@ def source_files(root: Path) -> dict[str, bytes]:
     base = (root / SKILL_PATH).resolve()
     files = {
         p.relative_to(base).as_posix(): p.read_text(encoding="utf-8").encode("utf-8")
-        for p in sorted(base.rglob("*")) if p.is_file()
+        for p in sorted(base.rglob("*"), key=lambda p: p.relative_to(base).as_posix()) if p.is_file()
     }
     expected = {"SKILL.md", *RESOURCE_ORDER}
     if set(files) != expected:
