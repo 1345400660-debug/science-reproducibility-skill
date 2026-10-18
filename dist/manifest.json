@@ -1,14 +1,14 @@
 {
-  "version": "2.0.1",
+  "version": "2.0.2",
   "source": "skills/paper-repro-pipeline",
   "files": {
-    "SKILL.md": "c89d829d539940f50e3fd8ce7b8e702d885f659b474ae8f686dddc3864f1f001",
+    "SKILL.md": "6b80e8ad7c5bd7e0686ea97e27767f52ef65e3b8a45ec26b215f70c1e78bd05d",
     "references/agent-operating-principles.md": "5b111a17e6493eeac6074f5e815acc6854b15c3a8a5b17563471c059b91915a4",
     "references/deep-learning-experiment-principles.md": "9696c3c81ed96ee3fa319eeb0eac4eb25a8df8292de85a758408c8056edd9ec1",
     "references/research-pitfall-checklist.md": "aaa26ae2f9d42782b36b174a6c780b20fd4b9f09c9070b545130f0ee87f4baba",
     "references/research-rigor-principles.md": "b78bb786bbc43c12910d3ac389c25cd3bd3bb1ef12fdbda42a85fbac5d7aadf4",
     "references/research-safety-principles.md": "84cac9ee8e6eeef19e8372efdb0f2862dda73cc9e78654c372c563c9ece88716",
-    "references/workflow.md": "7cbff0d38cc3fb032e8a93a626b2c24466d14a9845064e0fd601151fba1f7501",
+    "references/workflow.md": "5e0267631c48abafbf2bdce0eefee3e63d71ba38f963dd325c03d5cdf48ed3ea",
     "templates/AGENTS.md": "39ea8cc4b57769eb3614af9f9f9a86b2866e4ad45d6de6da76e5785e5deae4ac",
     "templates/task-prompts.md": "e9d62b821523da41f580ecd80d666ce6d7b7236e1706244d92bb9b871fc1bc61"
   }
