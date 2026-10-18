@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "source": "skills/paper-repro-pipeline",
   "files": {
     "SKILL.md": "c89d829d539940f50e3fd8ce7b8e702d885f659b474ae8f686dddc3864f1f001",
