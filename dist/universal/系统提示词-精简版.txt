@@ -1,4 +1,4 @@
-<!-- Generated from skills/paper-repro-pipeline/SKILL.md; version 2.0.2. Do not edit. -->
+<!-- Generated from skills/paper-repro-pipeline/SKILL.md; version 2.0.3. Do not edit. -->
 
 # 论文复现工作流
 
@@ -37,6 +37,8 @@
 代码关键词只提供线索。L1 要核对可达性、官方归属、方法/入口对应，以及目标环境可行性；没有执行时记“运行未验证”。未找到实现时记录检索范围；核实或运行受阻时标记 `L1-blocked` 并保存原因。
 
 已有具体错误证据先诊断；只有证据不足以区分慢与错时，才在授权预算内做单因素实验。不要把增加训练预算变成排查错误的前提。有限扫描仅支持已覆盖范围内的观察。
+
+根据十轮复盘形成的证据与交付检查（见完整手册的“资源：references/evidence-and-delivery.md”章节）：写自检或使用断点续跑时读第 1–2 节；修改验收判据时读第 3 节；整理对照表、摘要或交付包时读第 4–6 节。检查通过数只描述该检查覆盖的性质，不直接转换成论文复现成功。打包时可运行随包的交付核对脚本（见完整手册的“资源：scripts/verify_delivery.py”章节），路径和必需文件由当前项目确定。
 
 ## 保存结果与继续工作
 

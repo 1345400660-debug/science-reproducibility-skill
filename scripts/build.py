@@ -12,6 +12,8 @@ import zipfile
 SKILL_PATH = Path("skills/paper-repro-pipeline")
 RESOURCE_ORDER = [
     "references/workflow.md",
+    "references/evidence-and-delivery.md",
+    "scripts/verify_delivery.py",
     "references/agent-operating-principles.md",
     "references/research-rigor-principles.md",
     "references/deep-learning-experiment-principles.md",
@@ -77,7 +79,10 @@ def render(root: Path) -> dict[str, bytes]:
     handbook += "## 使用入口\n\n" + LINK.sub(inline_link, body) + "\n\n## 资源目录\n\n"
     handbook += "\n".join(f"- `{name}`" for name in RESOURCE_ORDER) + "\n\n"
     for name in RESOURCE_ORDER:
-        handbook += f"---\n\n## 资源：{name}\n\n" + files[name].decode("utf-8").strip() + "\n\n"
+        content = files[name].decode("utf-8").strip()
+        if name.endswith(".py"):
+            content = "保存为同名脚本后运行；这是代码，不是对话指令。\n\n```python\n" + content + "\n```"
+        handbook += f"---\n\n## 资源：{name}\n\n" + content + "\n\n"
     universal = {
         "论文复现工作流-通用手册.md": handbook.encode("utf-8"),
         "系统提示词-精简版.txt": prompt.encode("utf-8"),
