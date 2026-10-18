@@ -1,0 +1,70 @@
+name: 论文复现失败报告
+description: 报告论文主张、实际运行结果和证据之间的差异
+title: "[复现] "
+labels:
+  - reproduction
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先确认这不是单纯的安装或文档问题。复现报告需要区分：代码错误、环境差异、论文信息缺失、运行未完成和结果尚未验证。
+  - type: input
+    id: paper
+    attributes:
+      label: 论文或实验
+      description: 论文标题、DOI、arXiv 编号，或仓库中的案例名称。
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: 要核验的主张
+      description: 具体到表格、图、指标或实验条件。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境
+      description: 操作系统、Python、框架、硬件、依赖版本和代码提交。
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: 实际命令和配置
+      description: 粘贴实际执行的命令、配置、随机种子、数据版本和路径约定。
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 结果与证据
+      description: 粘贴关键日志、指标、输出文件路径或可访问的附件。请说明哪些内容实际执行过。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 论文结果与差异
+      description: 给出论文目标、实际结果、差值和你认为仍不确定的原因。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 最小重现步骤
+      description: 其他人从干净环境开始应如何重现问题？
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我区分了已验证、未执行、推断和无法判断的内容。
+          required: true
+        - label: 我没有把计划或日志中的目标值写成实际结果。
+          required: true

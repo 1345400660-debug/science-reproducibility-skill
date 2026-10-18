@@ -1,0 +1,34 @@
+name: Bug 报告
+description: 报告技能、构建脚本或安装流程中的明确错误
+title: "[Bug] "
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: 说明实际发生了什么，以及你期望发生什么。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 给出从干净环境开始的最小步骤。
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境和日志
+      description: 操作系统、运行时版本、命令和完整错误信息。
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充信息
+      description: 可附上截图、文件路径或相关提交。
